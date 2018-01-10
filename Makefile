@@ -95,7 +95,7 @@ canary: build
 
 # generate bindata when templates are updated
 .PHONY: generate
-generate: build/image_build
+generate: #build/image_build
 	${DOCKRUN} go generate ./generator
 
 # ----------------------------------------------
